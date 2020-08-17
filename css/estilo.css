@@ -1,0 +1,101 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open sans";
+  background: #E8E8E8;
+}
+body header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  background: #34495E;
+}
+body header #button-menu {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+body header .navegacion {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0%;
+  height: 100vh;
+  background: rgba(138, 110, 110, 0);
+}
+body header .navegacion ul {
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: -320px;
+  transition: left 0.3s;
+}
+body header .navegacion .menu .title-menu {
+  padding: 20px;
+  background: #5F6F81;
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+}
+body header .navegacion .menu a {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #C6D0DA;
+  font-size: 22px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #575D69;
+}
+body header .navegacion .menu a:hover {
+  background: #798DA3;
+  color: #fff;
+}
+body header .navegacion .menu .icon-menu {
+  margin-right: 12px;
+}
+body header .navegacion .menu .item-submenu > a::after {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  float: right;
+}
+body header .navegacion .submenu .title-menu {
+  background: #fff;
+  color: #575D69;
+}
+body header .navegacion .submenu .go-back {
+  padding: 10px 20px;
+  background: #5F6F81;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+body header .navegacion .submenu .go-back::before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "";
+  margin-right: 10px;
+}
+@media screen and (max-width: 320px) {
+  body header .navegacion ul {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */
